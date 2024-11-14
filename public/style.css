@@ -1,0 +1,57 @@
+body{
+    background-color: lightblue;
+    color:rgb(0, 51, 255);
+}
+.greetings{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1{
+    font-size: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label,input{
+    font-size: 30px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    color: rgb(7, 124, 221);
+}
+
+label{
+    color: rgb(7, 124, 221);
+}
+.srchBttn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:20px;
+    
+}
+.p1{
+    margin-right:20px;
+}
+.p2{
+    margin-left:20px;
+}
+.btn{
+    color: red;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+.det{
+    background-color: black;
+    color: white;
+}
