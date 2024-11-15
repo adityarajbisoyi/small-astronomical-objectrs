@@ -2,10 +2,11 @@ import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.port|| 3000;
 const api = "https://ssd-api.jpl.nasa.gov/cad.api";
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
+
 
 app.listen(port,(req,res)=>{
     console.log(`Server is actively listening at ${port}.`);
