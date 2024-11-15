@@ -22,13 +22,13 @@ app.post("/search",async (req,res)=>{
     let maxDate = req.body["to"];
     let resp = "";
     if(minDate&&maxDate){
-        resp = await axios.get(`${api}?date-min=${minDate}&sort=dist&limit=1`);
+        resp = await axios.get(`${api}?date-min=${minDate}&limit=1`);
     }
     else if(minDate){
-        resp = await axios.get(`${api}?date-min=${minDate}&sort=dist&limit=1`);
+        resp = await axios.get(`${api}?date-min=${minDate}&limit=1`);
     }
     else if(maxDate){
-        resp = await axios.get(`${api}?date-max=${maxDate}&sort=dist&limit=1`);
+        resp = await axios.get(`${api}?date-max=${maxDate}&limit=1`);
     }
     else{
         resp = await axios.get(`${api}?sort=dist&limit=1`);
